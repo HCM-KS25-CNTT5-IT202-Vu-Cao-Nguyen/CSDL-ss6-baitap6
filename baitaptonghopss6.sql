@@ -16,7 +16,9 @@ CREATE TABLE Bookings (
     user_id INT,
     hotel_id INT,
     total_price DECIMAL(15,2),
-    status VARCHAR(20)
+    status VARCHAR(20),
+    FOREIGN KEY (user_id) REFERENCES Users(user_id),
+    FOREIGN KEY (hotel_id) REFERENCES Hotels(hotel_id)
 );
 
 INSERT INTO Users VALUES (1, 'Nguyễn Tấn Dư'), (2, 'Lê Tuấn');
