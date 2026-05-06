@@ -1,3 +1,4 @@
+DROP DATABASE top_user_vip_db;
 CREATE DATABASE IF NOT EXISTS top_user_vip_db;
 USE top_user_vip_db;
 
